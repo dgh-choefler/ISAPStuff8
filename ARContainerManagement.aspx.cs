@@ -279,6 +279,7 @@ namespace ISAP.Frontend.Pages_Production
                 {
                     LinkButton link = new LinkButton
                     {
+                        ID = $"RemoveSalesOrder_{productionItem.SalesOrderNumber}",
                         Text = "Entnehmen",
                         CommandArgument = productionItem.SalesOrderNumber.ToString(),
                         OnClientClick = $"return confirm('Auftrag {productionItem.SalesOrderNumber} wirklich aus Container {currentContainerNumber} entfernen?');"
